@@ -10,10 +10,10 @@ export function FinalCTA() {
           <div className="absolute inset-0 grid-bg opacity-30" />
           <div className="relative max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05]">
-              Ready to upgrade your <span className="text-gradient">entertainment?</span>
+              Ready to cut the cord and <span className="text-gradient">start streaming?</span>
             </h2>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground">
-              One call. Free expert setup. Streaming the same day.
+              One call. A live expert handles everything. Streaming the same day.
             </p>
             <div className="mt-8 sm:mt-10 flex justify-center">
               <a

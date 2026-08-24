@@ -2,17 +2,17 @@ import { Section } from "./Section";
 import { Star } from "lucide-react";
 
 const reviews = [
-  { name: "Maya R.", role: "Designer · Brooklyn", text: "Setup took ten minutes. The picture on my OLED is unreal, like a cinema in my apartment.", rating: 5 },
-  { name: "Daniel K.", role: "Family of 5 · Austin", text: "Family profiles solved our chaos. The kids' row stays kids, my action movies stay mine.", rating: 5 },
-  { name: "Priya S.", role: "Sports nut · London", text: "Multi view during the playoffs was a game changer. I'll never go back.", rating: 5 },
-  { name: "Ahmed T.", role: "Audiophile · Toronto", text: "Lossless audio over WiFi 6E sounds better than my old wired setup. Magic.", rating: 5 },
+  { name: "Marcus L.", role: "Retired · Phoenix, AZ", text: "I had no idea how to set up my Fire Stick. The tech walked me through every step and I was watching my shows within 20 minutes. Outstanding service.", rating: 5 },
+  { name: "Sandra & Tom B.", role: "Homeowners · Tampa, FL", text: "We cut the cable and were worried about the switch. Stream Stick Hub set up three TVs in our house and we haven't looked back. Saving over $100 a month.", rating: 5 },
+  { name: "James P.", role: "Sports fan · Houston, TX", text: "I was missing games because of buffering. They fixed my network settings in one call and the picture has been perfect ever since. Best money I've spent.", rating: 5 },
+  { name: "Deborah N.", role: "Work from home · Atlanta, GA", text: "Called at 11pm because my Roku stopped working. Someone picked up immediately, fixed the issue remotely, and I was back watching in 15 minutes. Incredible.", rating: 5 },
 ];
 
 export function Testimonials() {
   return (
     <Section
-      eyebrow="Loved by 2M+ households"
-      title={<>People can't stop <span className="text-gradient">streaming</span></>}
+      eyebrow="Trusted by customers nationwide"
+      title={<>Real people, <span className="text-gradient">real results</span></>}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {reviews.map((r) => (

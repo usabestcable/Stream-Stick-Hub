@@ -3,12 +3,12 @@ import { useState } from "react";
 import { Plus } from "lucide-react";
 
 const faqs = [
-  { q: "Do I need a smart TV to use Stream Stick Hub?", a: "No. Our devices plug into any TV with HDMI and instantly turn it into a smart TV." },
-  { q: "Which streaming apps are supported?", a: "All the major ones: Netflix, Disney+, Prime Video, Apple TV+, YouTube, plus 10,000+ free channels." },
-  { q: "Is professional installation included?", a: "Standard shipping is free. White glove install is available in 80+ cities for a flat $79." },
-  { q: "Can I share my subscription with family?", a: "Yes. Every plan includes 6 individual profiles with personalized recommendations and parental controls." },
-  { q: "What about my privacy?", a: "Your viewing data never leaves your account. We don't sell it. Period." },
-  { q: "Is there a free trial?", a: "Devices come with a 30 day money back guarantee and 1 month of Stream Stick Hub+ on us." },
+  { q: "What streaming devices do you support?", a: "We support all major streaming devices including Fire TV Stick, Roku, Apple TV, Google Chromecast, Android TV boxes, and most smart TV platforms." },
+  { q: "How does the setup process work?", a: "Simply call our number and a live expert will guide you through the entire setup over the phone — step by step. Most setups take under 30 minutes." },
+  { q: "Do I need any technical knowledge?", a: "Not at all. Our technicians explain everything in plain language and walk with you at your own pace until your device is fully working." },
+  { q: "What if my device stops working after setup?", a: "Call us any time, 24/7. We will troubleshoot and resolve any issue at no additional charge within the original service window." },
+  { q: "Can you help me cut my cable bill?", a: "Yes. We can help you identify the right streaming apps and free channels to replace your cable subscription and start saving immediately." },
+  { q: "Is this a free service?", a: "No. Stream Stick Hub provides paid assistance services. Our fees are clearly disclosed before any charge is made. We are not a free helpline." },
 ];
 
 export function FAQ() {

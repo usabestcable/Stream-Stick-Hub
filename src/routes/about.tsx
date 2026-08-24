@@ -17,10 +17,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { t: "Independent", d: "We are not affiliated with any internet service provider, cable company, or telecom brand." },
-  { t: "Transparent pricing", d: "Fees are clearly disclosed before any charge is made." },
-  { t: "Real support", d: "Every interaction is handled by a real person — no bots, no runaround." },
-  { t: "Clear disclosure", d: "We clearly identify ourselves as a paid independent service provider on every page." },
+  { t: "Independent", d: "We are not affiliated with any internet service provider, cable company, or device manufacturer." },
+  { t: "Transparent", d: "Fees are clearly disclosed before any charge is made. No surprises, no fine print." },
+  { t: "Real Support", d: "Every call is answered by a live human expert — no bots, no automated menus." },
+  { t: "Any Device", d: "We support every major streaming stick, box, and smart TV platform on the market." },
 ];
 
 function AboutPage() {
@@ -28,8 +28,8 @@ function AboutPage() {
     <>
       <Section
         eyebrow="About us"
-        title={<>Independent streaming <span className="text-gradient">assistance</span></>}
-        subtitle="We provide paid assistance services to help you set up and enjoy your streaming experience. We are not affiliated with any internet service provider."
+        title={<>Independent streaming <span className="text-gradient">experts</span></>}
+        subtitle="We help people set up, fix, and get the most out of their streaming devices. We are not affiliated with any ISP or device brand."
       />
 
       <div className="container mx-auto px-6">
@@ -53,10 +53,10 @@ function AboutPage() {
       <Section align="left" eyebrow="Our mission" title={<>Streaming help, <span className="text-gradient">done right</span></>}>
         <div className="grid md:grid-cols-2 gap-12">
           <p className="text-lg text-muted-foreground">
-            Streaming should not require a tech degree. We provide clear, step-by-step paid assistance to help you enjoy your devices, apps, and services — from initial setup to troubleshooting.
-          </p>
-          <p className="text-lg text-muted-foreground">
-            We believe in full transparency: you know what you pay for, who we are, and what we can and cannot do for you. No hidden fees. No misleading branding.
+              Streaming should be simple. Plug in, press play, enjoy. But for millions of people it is anything but — confusing remotes, apps that won't load, networks that buffer. That is the problem we solve every day.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              Stream Stick Hub was built to give everyone access to a real streaming expert, any time they need one. We are independent, honest, and focused entirely on getting you watching what you love.
           </p>
         </div>
       </Section>

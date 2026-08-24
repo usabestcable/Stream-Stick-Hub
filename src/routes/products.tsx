@@ -11,43 +11,43 @@ import cinema from "@/assets/device-cinema.jpg";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Devices. Stream Stick Hub Streaming Products" },
-      { name: "description", content: "Premium streaming boxes, sticks and hubs. 4K, 8K, voice remote and Wi-Fi 6E. Free shipping." },
-      { property: "og:title", content: "Stream Stick Hub Devices" },
-      { property: "og:description", content: "Hardware that disappears. Magic that stays." },
+      { title: "Setup Services. Stream Stick Hub" },
+      { name: "description", content: "Expert setup for streaming boxes, sticks, smart TVs, and home theaters. We handle every device." },
+      { property: "og:title", content: "Stream Stick Hub Setup Services" },
+      { property: "og:description", content: "Every device. Expert setup. Same day streaming." },
     ],
   }),
   component: ProductsPage,
 });
 
 const products = [
-  { name: "StreamBox Ultra", slug: "streambox-ultra", img: box, tag: "Flagship", glow: "glow-purple",
-    desc: "Our most powerful streamer. 8K HDR, AI upscaling and the snappiest interface ever shipped.",
-    specs: { Resolution: "8K @ 60fps", HDR: "Dolby Vision, HDR10+", "Wi-Fi": "Wi-Fi 6E tri-band", Storage: "32 GB", Audio: "Dolby Atmos" },
-    has: { "4K HDR": true, "8K": true, Voice: true, Atmos: true, Ethernet: true } },
-  { name: "StreamStick Pro", slug: "streamstick-pro", img: stick, tag: "Portable", glow: "glow-pink",
-    desc: "Pocketable 4K HDR streamer. Travel-ready and TV-ready in seconds.",
-    specs: { Resolution: "4K @ 60fps", HDR: "HDR10+", "Wi-Fi": "Wi-Fi 6 dual-band", Storage: "8 GB", Audio: "Dolby Digital+" },
-    has: { "4K HDR": true, "8K": false, Voice: true, Atmos: false, Ethernet: false } },
-  { name: "SmartBeam Hub", slug: "smartbeam-hub", img: hub, tag: "Smart Home", glow: "glow-blue",
-    desc: "A voice first hub that ties your whole home together: TV, lights, speakers, scenes.",
-    specs: { Resolution: "4K @ 60fps", HDR: "Dolby Vision", "Wi-Fi": "Wi-Fi 6E", Storage: "16 GB", Audio: "Dolby Atmos" },
-    has: { "4K HDR": true, "8K": false, Voice: true, Atmos: true, Ethernet: true } },
-  { name: "HomeCinema Max", slug: "homecinema-max", img: cinema, tag: "Theater", glow: "",
-    desc: "A streamer and audiophile soundbar in one beautiful enclosure.",
-    specs: { Resolution: "4K @ 120fps", HDR: "Dolby Vision IQ", "Wi-Fi": "Wi-Fi 6E", Audio: "5.1.2 Dolby Atmos", Speakers: "9-driver array" },
-    has: { "4K HDR": true, "8K": false, Voice: true, Atmos: true, Ethernet: true } },
+  { name: "Streaming Box Setup", slug: "streambox-ultra", img: box, tag: "Most Popular", glow: "glow-purple",
+    desc: "We configure your streaming box from scratch — apps, accounts, remote, and picture settings — so you are watching the same day.",
+    specs: { Devices: "All major brands", Resolution: "Up to 4K HDR", Apps: "All major platforms", "Avg. Time": "Under 30 min", Support: "24/7 follow-up" },
+    has: { "Device Setup": true, "App Install": true, "Account Login": true, "Network Fix": true, "24/7 Support": true } },
+  { name: "Streaming Stick Setup", slug: "streamstick-pro", img: stick, tag: "Quick Setup", glow: "glow-pink",
+    desc: "Plug in your streaming stick and let us do the rest. We install apps, sign in to your accounts, and make sure everything works.",
+    specs: { Devices: "Fire Stick, Roku & more", Resolution: "Up to 4K", Apps: "All major platforms", "Avg. Time": "15–20 min", Support: "24/7 follow-up" },
+    has: { "Device Setup": true, "App Install": true, "Account Login": true, "Network Fix": true, "24/7 Support": true } },
+  { name: "Smart TV Integration", slug: "smartbeam-hub", img: hub, tag: "All-in-One", glow: "glow-blue",
+    desc: "We connect your smart TV, streaming stick, speakers, and apps into one seamless, easy-to-use entertainment system.",
+    specs: { Devices: "All smart TV brands", Apps: "Full app library", "Voice Setup": "Included", "Avg. Time": "30–45 min", Support: "24/7 follow-up" },
+    has: { "Device Setup": true, "App Install": true, "Account Login": true, "Network Fix": true, "24/7 Support": true } },
+  { name: "Home Theater Setup", slug: "homecinema-max", img: cinema, tag: "Premium", glow: "",
+    desc: "Full audio and video setup for your home theater — every input, speaker, and streaming source configured for the best experience.",
+    specs: { Devices: "TV, soundbar, streamer", Resolution: "Up to 4K HDR", Audio: "Surround sound", "Avg. Time": "45–60 min", Support: "24/7 follow-up" },
+    has: { "Device Setup": true, "App Install": true, "Account Login": true, "Network Fix": true, "24/7 Support": true } },
 ];
 
-const compareKeys = ["4K HDR", "8K", "Voice", "Atmos", "Ethernet"] as const;
+const compareKeys = ["Device Setup", "App Install", "Account Login", "Network Fix", "24/7 Support"] as const;
 
 function ProductsPage() {
   return (
     <>
       <Section
-        eyebrow="Devices"
-        title={<>Hardware that <span className="text-gradient">disappears</span></>}
-        subtitle="Quietly powerful. Beautifully designed. Built to last."
+        eyebrow="Setup Services"
+        title={<>We handle <span className="text-gradient">every device</span></>}
+        subtitle="From streaming sticks to full home theaters — our experts set up every type of device, same day."
       />
 
       <div className="container mx-auto px-6 space-y-24">
@@ -79,7 +79,7 @@ function ProductsPage() {
         ))}
       </div>
 
-      <Section eyebrow="Compare" title={<>Find your <span className="text-gradient">perfect fit</span></>}>
+      <Section eyebrow="Compare" title={<>What's <span className="text-gradient">included</span></>}>
         <div className="overflow-x-auto">
           <table className="w-full glass-strong rounded-2xl overflow-hidden">
             <thead>

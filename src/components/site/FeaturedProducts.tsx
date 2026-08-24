@@ -8,18 +8,18 @@ import hub from "@/assets/device-hub.jpg";
 import cinema from "@/assets/device-cinema.jpg";
 
 const products = [
-  { name: "StreamBox Ultra", slug: "streambox-ultra", tag: "Flagship", desc: "8K HDR, Wi-Fi 6E, AI upscaling.", img: box, glow: "glow-purple" },
-  { name: "StreamStick Pro", slug: "streamstick-pro", tag: "Portable", desc: "4K HDR in your pocket.", img: stick, glow: "glow-pink" },
-  { name: "SmartBeam Hub", slug: "smartbeam-hub", tag: "Smart Home", desc: "Voice-first whole-home control.", img: hub, glow: "glow-blue" },
-  { name: "HomeCinema Max", slug: "homecinema-max", tag: "Theater", desc: "Soundbar + streamer in one.", img: cinema, glow: "" },
+  { name: "Streaming Box Setup", slug: "streambox-ultra", tag: "Most Popular", desc: "We configure your streaming box from factory reset to first play — apps, accounts, and remote included.", img: box, glow: "glow-purple" },
+  { name: "Streaming Stick Setup", slug: "streamstick-pro", tag: "Quick & Easy", desc: "Plug in your streaming stick and we handle the rest. Up and running in minutes.", img: stick, glow: "glow-pink" },
+  { name: "Smart TV Integration", slug: "smartbeam-hub", tag: "All-in-One", desc: "We connect your smart TV, streaming apps, and home devices into one seamless setup.", img: hub, glow: "glow-blue" },
+  { name: "Home Theater Setup", slug: "homecinema-max", tag: "Premium", desc: "Full audio and video calibration so your home theater sounds and looks its best.", img: cinema, glow: "" },
 ];
 
 export function FeaturedProducts() {
   return (
     <Section
-      eyebrow="Featured Devices"
-      title={<>Hardware that <span className="text-gradient">disappears</span></>}
-      subtitle="Every device is designed to feel invisible, until the magic begins."
+      eyebrow="What We Set Up"
+      title={<>We handle <span className="text-gradient">every device</span></>}
+      subtitle="From compact streaming sticks to full home theater systems — our experts cover it all."
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         {products.map((p) => (

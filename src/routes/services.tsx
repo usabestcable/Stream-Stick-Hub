@@ -15,28 +15,28 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Services Stream Stick Hub" },
-      { name: "description", content: "Streaming setup, smart home integration, premium support and optimization services for modern homes." },
+      { name: "description", content: "Expert streaming device setup, troubleshooting, and 24/7 support. We handle Fire Stick, Roku, Apple TV, smart TVs, and more." },
       { property: "og:title", content: "Stream Stick Hub Services" },
-      { property: "og:description", content: "White glove streaming, end to end." },
+      { property: "og:description", content: "Every device set up. Every problem solved. Same day." },
     ],
   }),
   component: ServicesPage,
 });
 
 const services = [
-  { icon: Settings, img: setupImg, title: "Streaming Consultation", desc: "A 30 minute session with a streaming strategist to map out the perfect setup for your home, household and budget.", points: ["Personalized device match", "App stack recommendation", "Cost saving subscription audit"] },
-  { icon: Home, img: smartImg, title: "Smart Home Integration", desc: "Unify your TVs, speakers, lights and assistants into a single, scene based entertainment system.", points: ["Works with Alexa, Google, Apple", "Multi room sync", "One tap movie scenes"] },
-  { icon: Wrench, img: installImg, title: "Device Setup & Installation", desc: "Certified pros mount, wire, and configure every device, leaving your space spotless.", points: ["Cable management", "Calibration included", "Same day in 80+ cities"] },
-  { icon: CreditCard, img: supportImg, title: "Premium Streaming Support", desc: "24/7 priority support, proactive monitoring and remote diagnostics for your entire ecosystem.", points: ["Dedicated specialist", "Sub 2 minute response", "Hardware on loan during repairs"] },
-  { icon: Gauge, img: optimizeImg, title: "Performance Optimization", desc: "Network audit, mesh tuning and codec calibration for buffer free 4K and 8K streams.", points: ["WiFi heatmap", "QoS tuning", "Streaming benchmark report"] },
-  { icon: Users2, img: bundleImg, title: "Entertainment Bundles", desc: "Curated subscription bundles that save up to 40% versus buying apps individually.", points: ["Mix and match plans", "Single bill", "Cancel anytime"] },
+  { icon: Settings, img: setupImg, title: "Device Setup & Activation", desc: "We set up your streaming device from scratch — unboxing to first play — in one call.", points: ["All brands supported", "Apps installed & signed in", "Remote and settings configured"] },
+  { icon: Home, img: smartImg, title: "Smart TV Integration", desc: "We connect your smart TV, streaming stick, and apps into one clean, easy-to-use system.", points: ["Any smart TV brand", "App library installed", "Input and source setup"] },
+  { icon: Wrench, img: installImg, title: "Troubleshooting & Repair", desc: "Buffering, black screen, or a device that won't respond? We diagnose and fix it fast.", points: ["Remote diagnosis", "Step-by-step guided fix", "Follow-up support included"] },
+  { icon: CreditCard, img: supportImg, title: "24/7 Live Support", desc: "A real streaming expert is available around the clock — no wait times, no bots.", points: ["Pick up in under 2 minutes", "US-based specialists", "Available nights and weekends"] },
+  { icon: Gauge, img: optimizeImg, title: "Network & Speed Optimization", desc: "Slow Wi-Fi ruining your stream? We walk you through settings to eliminate buffering for good.", points: ["Router and Wi-Fi settings", "Bandwidth prioritization", "4K-ready network tuning"] },
+  { icon: Users2, img: bundleImg, title: "Cord Cutting Consultation", desc: "We help you identify free and paid streaming options to replace your cable and start saving.", points: ["App recommendations", "Subscription audit", "Channel lineup planning"] },
 ];
 
 const steps = [
-  { n: "01", t: "Discover", d: "Tell us about your space, devices and people." },
-  { n: "02", t: "Design", d: "We design a tailored streaming blueprint." },
-  { n: "03", t: "Deploy", d: "Pros install and configure everything." },
-  { n: "04", t: "Delight", d: "Lifetime priority support keeps it humming." },
+  { n: "01", t: "Call Us", d: "A live expert picks up — no menus, no hold music." },
+  { n: "02", t: "Diagnose", d: "We ask a few questions to understand your device and setup." },
+  { n: "03", t: "Set Up", d: "We walk you through everything step by step until it works." },
+  { n: "04", t: "Stream", d: "You hang up watching exactly what you want. We follow up to make sure." },
 ];
 
 function ServicesPage() {
@@ -44,8 +44,8 @@ function ServicesPage() {
     <>
       <Section
         eyebrow="Services"
-        title={<>Concierge for your <span className="text-gradient">entertainment</span></>}
-        subtitle="From first plug to perfect picture. We handle every detail so you just press play."
+        title={<>Expert help for <span className="text-gradient">every device</span></>}
+        subtitle="Setup, troubleshooting, and 24/7 support — we handle it all so you can just press play."
       />
 
       <div className="container mx-auto px-6 -mt-12">
@@ -85,8 +85,7 @@ function ServicesPage() {
         </div>
       </div>
 
-      <Section eyebrow="Process" title={<>How it <span className="text-gradient">works</span></>}>
-        <div className="grid md:grid-cols-4 gap-5 relative">
+      <Section eyebrow="Process" title={<>How it <span className="text-gradient">works</span></>}>        <div className="grid md:grid-cols-4 gap-5 relative">
           {steps.map((s) => (
             <div key={s.n} className="glass rounded-2xl p-6">
               <div className="text-4xl font-bold text-gradient">{s.n}</div>

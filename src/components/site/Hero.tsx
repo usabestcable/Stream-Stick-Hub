@@ -26,12 +26,12 @@ export function Hero() {
         {/* Centered headline */}
         <div className="text-center max-w-5xl mx-auto animate-fade-up [animation-delay:120ms]">
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight">
-            Stream the <span className="text-gradient">heavens.</span>
+            Your stream. <span className="text-gradient">Our expertise.</span>
             <br className="hidden sm:block" />
-            <span className="block sm:inline"> Expert setup, every time.</span>
+            <span className="block sm:inline"> Plug in and play.</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground px-2">
-            Stream Stick Hub provides paid assistance services to help you set up and enjoy your streaming experience.
+            Stream Stick Hub provides expert setup and support for all your streaming devices.
             We are an independent service provider and are not affiliated with any internet or cable company.
           </p>
 

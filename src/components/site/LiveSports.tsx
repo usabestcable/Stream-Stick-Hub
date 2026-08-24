@@ -17,26 +17,26 @@ export function LiveSports() {
             LIVE NOW · 12 events
           </span>
           <h2 className="mt-5 text-5xl md:text-7xl font-bold leading-[1.05]">
-            Never miss <span className="text-gradient">the action</span>
+            Never miss <span className="text-gradient">a game</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl">
-            Front row seats to every game, race and match, in stunning clarity, with
-            multi view, real time stats and instant replays.
+            We set up live sports on your streaming device so every game, match, and race
+            comes through in crisp, buffer-free quality — no cable required.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={PHONE_TEL} className="bg-cta px-6 py-3 rounded-xl font-semibold flex items-center gap-2 glow-pink">
               <Phone className="h-4 w-4" /> {PHONE_DISPLAY}
             </a>
             <a href={PHONE_TEL} className="glass-strong px-6 py-3 rounded-xl font-semibold">
-              Get live sports today
+              Get sports set up today
             </a>
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-4 max-w-xl">
             {[
-              { k: "200+", v: "Live channels" },
-              { k: "8K", v: "Max quality" },
-              { k: "<10ms", v: "Latency" },
+              { k: "200+", v: "Live channels available" },
+              { k: "4K", v: "Supported quality" },
+              { k: "30 min", v: "Avg. setup time" },
             ].map((s) => (
               <div key={s.v} className="glass rounded-2xl p-4">
                 <div className="text-3xl font-bold text-gradient">{s.k}</div>
