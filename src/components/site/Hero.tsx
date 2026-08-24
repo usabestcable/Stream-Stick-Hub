@@ -26,9 +26,9 @@ export function Hero() {
         {/* Centered headline */}
         <div className="text-center max-w-5xl mx-auto animate-fade-up [animation-delay:120ms]">
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight">
-            Your stream. <span className="text-gradient">Our expertise.</span>
-            <br className="hidden sm:block" />
-            <span className="block sm:inline"> Plug in and play.</span>
+            <span className="block">Your stream.</span>
+            <span className="block text-gradient">Our expertise.</span>
+            <span className="block">Plug in and play.</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground px-2">
             Stream Stick Hub provides expert setup and support for all your streaming devices.
